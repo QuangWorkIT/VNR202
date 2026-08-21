@@ -31,9 +31,9 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
   const scorePercentage = Math.round((score / totalQuestions) * 100);
 
   const getRank = () => {
-    if (score === 10) return { title: 'XUẤT SẮC TUYỆT ĐỐI! 🏆', color: 'text-[#C27B66]', desc: 'Bạn là chuyên gia kiến thức lịch sử Cách mạng Tháng Tám!' };
-    if (score >= 7) return { title: 'GIỎI XUẤT SẮC! 🌟', color: 'text-[#8C9A84]', desc: 'Nắm rất vững các mốc sự kiện quan trọng trong môn VNR202.' };
-    if (score >= 5) return { title: 'KHÁ TỐT! 👍', color: 'text-[#2D3A31]', desc: 'Đã đoán đúng đa số từ khóa lịch sử quan trọng.' };
+    if (scorePercentage === 100) return { title: 'XUẤT SẮC TUYỆT ĐỐI! 🏆', color: 'text-[#C27B66]', desc: 'Bạn là chuyên gia kiến thức lịch sử Cách mạng Tháng Tám!' };
+    if (scorePercentage >= 80) return { title: 'GIỎI XUẤT SẮC! 🌟', color: 'text-[#8C9A84]', desc: 'Nắm rất vững các mốc sự kiện quan trọng trong môn VNR202.' };
+    if (scorePercentage >= 50) return { title: 'KHÁ TỐT! 👍', color: 'text-[#2D3A31]', desc: 'Đã đoán đúng đa số từ khóa lịch sử quan trọng.' };
     return { title: 'CỐ GẮNG HƠN NHÉ! 💪', color: 'text-[#C27B66]', desc: 'Hãy xem lại bảng tổng hợp từ khóa bên dưới để ghi nhớ kiến thức!' };
   };
 
@@ -53,7 +53,7 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
       </div>
 
       <h2 className="font-serif-title text-3xl sm:text-5xl font-bold text-[#2D3A31] mb-2">
-        Hoàn Thành <span className="italic font-normal text-[#C27B66]">10 Câu Hỏi</span>
+        Hoàn Thành <span className="italic font-normal text-[#C27B66]">{totalQuestions} Câu Hỏi</span>
       </h2>
 
       <div className={`text-lg sm:text-2xl font-serif-title font-bold mb-2 ${rank.color}`}>
@@ -88,7 +88,7 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
           className="flex items-center gap-2.5 bg-[#2D3A31] hover:bg-[#C27B66] text-[#F9F8F4] font-semibold px-8 py-4 rounded-full shadow-md hover:scale-105 active:scale-95 transition-all duration-300 text-sm sm:text-base cursor-pointer"
         >
           <RotateCcw className="w-5 h-5 text-[#F9F8F4]" />
-          <span>Chơi Lại Từ Đầu</span>
+          <span>Chơi Lượt Mới (Ngẫu Nhiên)</span>
         </button>
 
         <button
@@ -100,12 +100,12 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
         </button>
       </div>
 
-      {/* Historical Review List of 10 Keywords */}
+      {/* Historical Review List of Answered Keywords */}
       <div className="w-full text-left bg-[#F2F0EB] border border-[#E6E2DA] rounded-3xl p-6 sm:p-8 shadow-xs">
         <div className="flex items-center gap-3 mb-6 border-b border-[#E6E2DA] pb-4">
           <BookOpen className="w-6 h-6 text-[#8C9A84]" />
           <h3 className="font-serif-title font-bold text-[#2D3A31] text-lg sm:text-xl">
-            Bảng Tổng Hop 10 Từ Khóa Lịch Sử (VNR202)
+            Bảng Tổng Hợp {questions.length} Từ Khóa Lịch Sử (VNR202)
           </h3>
         </div>
 
@@ -132,3 +132,4 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
     </div>
   );
 }
+

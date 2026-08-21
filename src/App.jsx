@@ -6,13 +6,24 @@ import ResultView from './components/ResultView';
 import { QUESTIONS } from './data/questions';
 import { soundManager } from './utils/audio';
 
+// Fisher-Yates shuffle algorithm
+function getShuffledQuestions(pool, count) {
+  const shuffled = [...pool];
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, Math.min(count, shuffled.length));
+}
+
 export default function App() {
   // Navigation states: 'home' | 'game' | 'result'
   const [viewState, setViewState] = useState('home');
+  const [selectedCount, setSelectedCount] = useState(15);
+  const [activeQuestions, setActiveQuestions] = useState(() => getShuffledQuestions(QUESTIONS, 15));
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [soundEnabled, setSoundEnabled] = useState(true);
-
   const [questionStates, setQuestionStates] = useState({});
 
   // Toggle sound
@@ -22,9 +33,12 @@ export default function App() {
     soundManager.enabled = nextState;
   };
 
-  // Start game from Home page ("Bắt đầu trò chơi")
-  const handleStartGame = () => {
+  // Start game from Home page with user-selected count
+  const handleStartGame = (count = 15) => {
     soundManager.playClick();
+    setSelectedCount(count);
+    const selectedSubset = getShuffledQuestions(QUESTIONS, count);
+    setActiveQuestions(selectedSubset);
     setScore(0);
     setCurrentQuestionIndex(0);
     setQuestionStates({});
@@ -48,7 +62,7 @@ export default function App() {
   // Move to next question or show results
   const handleNextQuestion = () => {
     soundManager.playClick();
-    if (currentQuestionIndex < QUESTIONS.length - 1) {
+    if (currentQuestionIndex < activeQuestions.length - 1) {
       setCurrentQuestionIndex((prev) => prev + 1);
     } else {
       setViewState('result');
@@ -74,14 +88,18 @@ export default function App() {
     }
   };
 
-  // Restart game from result page
+  // Restart game from result page with a fresh random subset of questions
   const handleRestart = () => {
     soundManager.playClick();
+    const freshSubset = getShuffledQuestions(QUESTIONS, selectedCount);
+    setActiveQuestions(freshSubset);
     setScore(0);
     setCurrentQuestionIndex(0);
     setQuestionStates({});
     setViewState('game');
   };
+
+  const currentQuestion = activeQuestions[currentQuestionIndex] || activeQuestions[0];
 
   return (
     <div className="min-h-screen bg-[#F9F8F4] text-[#2D3A31] font-sans-body selection:bg-[#8C9A84] selection:text-white flex flex-col justify-between relative">
@@ -97,7 +115,7 @@ export default function App() {
       {/* Dynamic Botanical Header */}
       <Header
         currentQuestionIndex={viewState === 'game' ? currentQuestionIndex : null}
-        totalQuestions={QUESTIONS.length}
+        totalQuestions={activeQuestions.length}
         score={score}
         onGoHome={handleGoHome}
         soundEnabled={soundEnabled}
@@ -113,13 +131,13 @@ export default function App() {
           />
         )}
 
-        {viewState === 'game' && (
+        {viewState === 'game' && currentQuestion && (
           <QuestionView
-            key={QUESTIONS[currentQuestionIndex].id}
-            question={QUESTIONS[currentQuestionIndex]}
+            key={currentQuestion.id}
+            question={currentQuestion}
             questionIndex={currentQuestionIndex}
-            totalQuestions={QUESTIONS.length}
-            savedState={questionStates[QUESTIONS[currentQuestionIndex].id]}
+            totalQuestions={activeQuestions.length}
+            savedState={questionStates[currentQuestion.id]}
             onSaveQuestionState={handleSaveQuestionState}
             onPrevQuestion={handlePrevQuestion}
             onNextQuestion={handleNextQuestion}
@@ -131,8 +149,8 @@ export default function App() {
         {viewState === 'result' && (
           <ResultView
             score={score}
-            totalQuestions={QUESTIONS.length}
-            questions={QUESTIONS}
+            totalQuestions={activeQuestions.length}
+            questions={activeQuestions}
             onRestart={handleRestart}
             onGoHome={handleGoHome}
           />
@@ -141,3 +159,4 @@ export default function App() {
     </div>
   );
 }
+

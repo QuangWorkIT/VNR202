@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2D3A31" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070" />
+      <stop offset="100%" stop-color="#D49B24" />
+    </linearGradient>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98A75" />
+      <stop offset="100%" stop-color="#C27B66" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B29B" />
+      <stop offset="100%" stop-color="#8C9A84" />
+    </linearGradient>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6CA0DC" />
+      <stop offset="100%" stop-color="#2B5F8C" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="280" rx="24" fill="#F2F0EB" />
+  <rect x="8" y="8" width="624" height="264" rx="18" fill="none" stroke="#E6E2DA" stroke-width="2" />
+  
+    <g transform="translate(35, 40)">
+    <rect width="150" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Hammer / Phá -->
+      <g transform="translate(75, 100) rotate(-35)">
+        <rect x="-18" y="-35" width="36" height="24" rx="4" fill="#2D3A31" />
+        <rect x="-5" y="-11" width="10" height="70" rx="4" fill="#C27B66" />
+        <path d="M-28 -40 L-20 -48 M28 -40 L20 -48" stroke="#C27B66" stroke-width="3" stroke-linecap="round" />
+      </g>
+    
+  </g>
+    <g transform="translate(205, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(245, 40)">
+    <rect width="150" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Barn / Kho -->
+      <g transform="translate(35, 55)">
+        <polygon points="40,15 5,45 75,45" fill="#C27B66" />
+        <rect x="12" y="45" width="56" height="50" fill="#F2F0EB" stroke="#8C9A84" stroke-width="2" />
+        <rect x="28" y="58" width="24" height="37" fill="#2D3A31" rx="3" />
+      </g>
+    
+  </g>
+    <g transform="translate(415, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(455, 40)">
+    <rect width="150" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Golden Grain Rice / Thóc -->
+      <g transform="translate(75, 50)">
+        <path d="M0 110 Q-20 60 0 10" stroke="#D49B24" stroke-width="4" fill="none" stroke-linecap="round" />
+        <ellipse cx="-10" cy="25" rx="7" ry="12" fill="#F7D070" transform="rotate(-30 -10 25)" />
+        <ellipse cx="10" cy="35" rx="7" ry="12" fill="#F7D070" transform="rotate(30 10 35)" />
+        <ellipse cx="-12" cy="55" rx="7" ry="12" fill="#F7D070" transform="rotate(-30 -12 55)" />
+        <ellipse cx="12" cy="65" rx="7" ry="12" fill="#F7D070" transform="rotate(30 12 65)" />
+        <ellipse cx="0" cy="10" rx="7" ry="12" fill="#F7D070" />
+      </g>
+    
+  </g>
+  
+</svg>

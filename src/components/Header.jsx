@@ -1,5 +1,5 @@
 import React from 'react';
-import { Home, Trophy, BookOpen, Volume2, VolumeX, Sparkles } from 'lucide-react';
+import { Home, Trophy, BookOpen, Volume2, VolumeX } from 'lucide-react';
 
 export default function Header({ 
   currentQuestionIndex, 

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2D3A31" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070" />
+      <stop offset="100%" stop-color="#D49B24" />
+    </linearGradient>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98A75" />
+      <stop offset="100%" stop-color="#C27B66" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B29B" />
+      <stop offset="100%" stop-color="#8C9A84" />
+    </linearGradient>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6CA0DC" />
+      <stop offset="100%" stop-color="#2B5F8C" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="280" rx="24" fill="#F2F0EB" />
+  <rect x="8" y="8" width="624" height="264" rx="18" fill="none" stroke="#E6E2DA" stroke-width="2" />
+  
+    <g transform="translate(60, 40)">
+    <rect width="220" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Crowd / Dân -->
+      <g transform="translate(110, 105)">
+        <!-- Middle person -->
+        <circle cx="0" cy="-20" r="14" fill="#C27B66" />
+        <path d="M-24 25 C-24 5, 24 5, 24 25 Z" fill="#C27B66" />
+        <!-- Left person -->
+        <circle cx="-30" cy="-12" r="10" fill="#8C9A84" />
+        <path d="M-46 25 C-46 10, -14 10, -14 25 Z" fill="#8C9A84" />
+        <!-- Right person -->
+        <circle cx="30" cy="-12" r="10" fill="#8C9A84" />
+        <path d="M14 25 C14 10, 46 10, 46 25 Z" fill="#8C9A84" />
+      </g>
+    
+  </g>
+    <g transform="translate(305, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(360, 40)">
+    <rect width="220" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Home Owner with Key / Chủ -->
+      <g transform="translate(110, 100)">
+        <!-- House outline -->
+        <polygon points="0,-35 -35,-5 35,-5" fill="#8C9A84" />
+        <rect x="-25" y="-5" width="50" height="40" fill="#F2F0EB" stroke="#2D3A31" stroke-width="2" />
+        <!-- Golden Key -->
+        <circle cx="5" cy="15" r="10" fill="none" stroke="#D49B24" stroke-width="4" />
+        <path d="M15 15 H35 M28 15 V22 M33 15 V22" stroke="#D49B24" stroke-width="4" stroke-linecap="round" />
+      </g>
+    
+  </g>
+  
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2D3A31" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070" />
+      <stop offset="100%" stop-color="#D49B24" />
+    </linearGradient>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98A75" />
+      <stop offset="100%" stop-color="#C27B66" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B29B" />
+      <stop offset="100%" stop-color="#8C9A84" />
+    </linearGradient>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6CA0DC" />
+      <stop offset="100%" stop-color="#2B5F8C" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="280" rx="24" fill="#F2F0EB" />
+  <rect x="8" y="8" width="624" height="264" rx="18" fill="none" stroke="#E6E2DA" stroke-width="2" />
+  
+    <g transform="translate(60, 40)">
+    <rect width="220" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Compass Pointing North (Bắc) -->
+      <g transform="translate(110, 100)">
+        <circle cx="0" cy="0" r="45" fill="#F9F8F4" stroke="#2D3A31" stroke-width="4" />
+        <!-- North Arrow -->
+        <polygon points="0,-35 12,0 0,-8 -12,0" fill="#DA251D" />
+        <polygon points="0,35 12,0 0,8 -12,0" fill="#8C9A84" />
+        <text x="0" y="-38" font-family="sans-serif" font-size="14" font-weight="bold" fill="#DA251D" text-anchor="middle">N</text>
+      </g>
+    
+  </g>
+    <g transform="translate(305, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(360, 40)">
+    <rect width="220" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- River Stream (Giang) -->
+      <g transform="translate(110, 100)">
+        <path d="M-45 -35 C-15 -35, -15 35, 15 35 C35 35, 45 45, 45 45" stroke="#6CA0DC" stroke-width="18" fill="none" stroke-linecap="round" />
+        <path d="M-45 -35 C-15 -35, -15 35, 15 35 C35 35, 45 45, 45 45" stroke="#F9F8F4" stroke-width="4" fill="none" stroke-dasharray="6 6" />
+      </g>
+    
+  </g>
+  
+</svg>

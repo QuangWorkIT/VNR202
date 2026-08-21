@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#2D3A31" flood-opacity="0.06" />
+    </filter>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D070" />
+      <stop offset="100%" stop-color="#D49B24" />
+    </linearGradient>
+    <linearGradient id="terraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D98A75" />
+      <stop offset="100%" stop-color="#C27B66" />
+    </linearGradient>
+    <linearGradient id="sageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B29B" />
+      <stop offset="100%" stop-color="#8C9A84" />
+    </linearGradient>
+    <linearGradient id="oceanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6CA0DC" />
+      <stop offset="100%" stop-color="#2B5F8C" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="280" rx="24" fill="#F2F0EB" />
+  <rect x="8" y="8" width="624" height="264" rx="18" fill="none" stroke="#E6E2DA" stroke-width="2" />
+  
+    <g transform="translate(35, 40)">
+    <rect width="150" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- P + Demon -->
+      <rect x="25" y="40" width="45" height="45" rx="8" fill="#2D3A31" />
+      <text x="47" y="73" font-family="sans-serif" font-size="28" font-weight="bold" fill="#F9F8F4" text-anchor="middle">P</text>
+      <text x="80" y="72" font-size="24" font-weight="bold" fill="#8C9A84">+</text>
+      <!-- Devil Icon -->
+      <g transform="translate(95, 42)">
+        <circle cx="22" cy="22" r="20" fill="#C27B66" />
+        <path d="M10 12 L14 4 L18 10 M26 10 L30 4 L34 12" stroke="#C27B66" stroke-width="3" stroke-linecap="round" fill="#C27B66" />
+        <circle cx="16" cy="20" r="3" fill="#F9F8F4" />
+        <circle cx="28" cy="20" r="3" fill="#F9F8F4" />
+        <path d="M15 30 Q22 36 29 30" stroke="#F9F8F4" stroke-width="2.5" fill="none" stroke-linecap="round" />
+      </g>
+      <text x="75" y="150" font-family="'Playfair Display', serif" font-size="28" font-weight="bold" fill="#2D3A31" text-anchor="middle">P-ÁC</text>
+    
+  </g>
+    <g transform="translate(205, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(250, 40)">
+    <rect width="150" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Mountain & Stream -->
+      <path d="M25 150 L65 70 L100 130 L115 105 L135 150 Z" fill="#8C9A84" opacity="0.4" />
+      <path d="M45 150 L85 85 L125 150 Z" fill="#8C9A84" />
+      <path d="M20 165 C50 155, 90 175, 130 160" stroke="#6CA0DC" stroke-width="4" fill="none" stroke-linecap="round" />
+      <path d="M20 180 C60 170, 100 190, 130 175" stroke="#6CA0DC" stroke-width="3" fill="none" stroke-linecap="round" />
+    
+  </g>
+    <g transform="translate(420, 126)">
+    <circle cx="14" cy="14" r="14" fill="#E6E2DA" />
+    <path d="M14 7v14M7 14h14" stroke="#8C9A84" stroke-width="3" stroke-linecap="round" />
+  </g>
+    <g transform="translate(465, 40)">
+    <rect width="140" height="200" rx="16" fill="#F9F8F4" stroke="#E6E2DA" stroke-width="1.5" filter="url(#shadow)" />
+    
+      <!-- Sheaf of Rice / Bó Lúa -->
+      <g transform="translate(40, 40)">
+        <path d="M30 140 C20 90, 10 50, 0 30 M30 140 C30 85, 30 45, 30 20 M30 140 C40 90, 50 50, 60 30" stroke="#D49B24" stroke-width="4" fill="none" stroke-linecap="round" />
+        <!-- Grains -->
+        <circle cx="0" cy="30" r="6" fill="#F7D070" />
+        <circle cx="10" cy="50" r="6" fill="#F7D070" />
+        <circle cx="30" cy="20" r="6" fill="#F7D070" />
+        <circle cx="30" cy="45" r="6" fill="#F7D070" />
+        <circle cx="60" cy="30" r="6" fill="#F7D070" />
+        <circle cx="50" cy="50" r="6" fill="#F7D070" />
+        <!-- Ribbon tying bundle -->
+        <rect x="10" y="95" width="40" height="12" rx="4" fill="#C27B66" />
+      </g>
+    
+  </g>
+  
+</svg>
