@@ -49,8 +49,8 @@ export const QUESTIONS = [
         alt: "Thời kỳ / Đồng hồ lịch" 
       },
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77G_qNIt6saQeotPxH5OtjSOlH3fbmEcZT6xMchoK3krcGCvx8WLGpVrN&s=10", 
-        alt: "Quá độ / Nhiệt độ" 
+        url: "/images/photos/boiling_thermometer.svg", 
+        alt: "Nhiệt kế đang sôi / Quá nhiệt độ (Quá độ)" 
       }
     ],
     hint: "Giai đoạn chuyển tiếp lịch sử lâu dài, phức tạp từ một xã hội cũ sang xã hội xã hội chủ nghĩa ở Việt Nam.",

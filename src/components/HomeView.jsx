@@ -17,7 +17,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
       {/* Decorative Botanical Badge */}
       <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#F2F0EB] border border-[#E6E2DA] text-[#8C9A84] text-xs sm:text-sm font-semibold shadow-xs mb-6">
         <Sparkles className="w-4 h-4 text-[#C27B66] animate-spin" style={{ animationDuration: '12s' }} />
-        <span className="tracking-wide">VNR202 • Lịch Sử Đảng Cộng Sản Việt Nam</span>
+        <span className="tracking-wide">HCM202 • Tư tưởng Hồ Chí Minh</span>
       </div>
 
       {/* Main Playfair Display Serif Title */}
@@ -25,14 +25,14 @@ export default function HomeView({ onStartGame, totalQuestions }) {
         Trò Chơi <span className="italic font-normal text-[#C27B66]">Đuổi Hình Bắt Chữ</span>
         <br />
         <span className="text-xl sm:text-3xl text-[#2D3A31]/80 font-sans-body font-medium mt-2 block">
-          Khám Phá Lịch Sử Qua Từ Khóa Cách Mạng
+          Khám Phá Tư tưởng Hồ Chí Minh
         </span>
       </h1>
 
       {/* Subtitle / Context description */}
       <p className="text-sm sm:text-base text-[#2D3A31]/80 max-w-2xl mb-8 leading-relaxed font-normal">
         Ngân hàng câu hỏi gồm <strong className="text-[#C27B66] font-semibold">{totalQuestions} câu hỏi</strong> đố chữ phong phú. 
-        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa lịch sử và đường lối cách mạng!
+        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa!
       </p>
 
       {/* QUESTION COUNT / MODE SELECTOR */}
@@ -107,9 +107,9 @@ export default function HomeView({ onStartGame, totalQuestions }) {
           <div className="w-12 h-12 rounded-2xl bg-[#8C9A84]/20 border border-[#8C9A84]/30 flex items-center justify-center mb-4">
             <Award className="w-6 h-6 text-[#8C9A84]" />
           </div>
-          <h3 className="font-serif-title font-bold text-[#2D3A31] text-lg mb-2">Ôn Tập VNR202</h3>
+          <h3 className="font-serif-title font-bold text-[#2D3A31] text-lg mb-2">Ôn Tập HCM202</h3>
           <p className="text-[#2D3A31]/75 text-sm leading-relaxed">
-            Học tập nhẹ nhàng, dễ nhớ toàn bộ mốc lịch sử HNTW 6, TW 8, Cao trào kháng Nhật và CMT8.
+            Học tập nhẹ nhàng, dễ nhớ toàn bộ mốc lịch sử.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
 
       {/* Footer Info */}
       <div className="mt-12 text-xs text-[#8C9A84] font-medium tracking-wide">
-        • Ngân hàng {totalQuestions} câu hỏi VNR202 •
+        • Ngân hàng {totalQuestions} câu hỏi HCM202 •
       </div>
     </div>
   );

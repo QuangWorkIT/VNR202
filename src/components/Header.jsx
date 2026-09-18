@@ -28,10 +28,10 @@ export default function Header({
 
           <div className="flex items-center gap-2.5">
             <div className="w-8 h-8 rounded-full bg-[#2D3A31] flex items-center justify-center font-serif-title text-[#F9F8F4] text-base font-bold shadow-sm">
-              V
+              H
             </div>
             <span className="font-serif-title text-base sm:text-xl font-bold tracking-tight text-[#2D3A31]">
-              Đuổi Hình Bắt Chữ <span className="italic font-normal text-[#C27B66]">VNR202</span>
+              Đuổi Hình Bắt Chữ <span className="italic font-normal text-[#C27B66]">HCM202</span>
             </span>
           </div>
         </div>
