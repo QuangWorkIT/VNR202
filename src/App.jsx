@@ -19,8 +19,8 @@ function getShuffledQuestions(pool, count) {
 export default function App() {
   // Navigation states: 'home' | 'game' | 'result'
   const [viewState, setViewState] = useState('home');
-  const [selectedCount, setSelectedCount] = useState(15);
-  const [activeQuestions, setActiveQuestions] = useState(() => getShuffledQuestions(QUESTIONS, 15));
+  const [selectedCount, setSelectedCount] = useState(10);
+  const [activeQuestions, setActiveQuestions] = useState(() => getShuffledQuestions(QUESTIONS, 10));
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
   const [soundEnabled, setSoundEnabled] = useState(true);
@@ -34,7 +34,7 @@ export default function App() {
   };
 
   // Start game from Home page with user-selected count
-  const handleStartGame = (count = 15) => {
+  const handleStartGame = (count = 10) => {
     soundManager.playClick();
     setSelectedCount(count);
     const selectedSubset = getShuffledQuestions(QUESTIONS, count);
