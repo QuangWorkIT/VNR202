@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 import { Play, Sparkles, Award, Lightbulb, Layers, Dices, Check } from 'lucide-react';
 
 export default function HomeView({ onStartGame, totalQuestions }) {
-  // Mode selection: 10, 15, 20, or total (27)
-  const [selectedCount, setSelectedCount] = useState(15);
+  // Mode selection: 5, 10, or total
+  const [selectedCount, setSelectedCount] = useState(10);
 
   const modeOptions = [
-    { count: 10, label: '10 Câu', desc: 'Chơi Nhanh' },
-    { count: 15, label: '15 Câu', desc: 'Tiêu Chuẩn' },
-    { count: 20, label: '20 Câu', desc: 'Thử Thách' },
+    { count: 5, label: '5 Câu', desc: 'Chơi Nhanh' },
+    { count: 10, label: '10 Câu', desc: 'Tiêu Chuẩn' },
     { count: totalQuestions, label: `Tất Cả (${totalQuestions})`, desc: 'Trọn Bộ Ngân Hàng' },
   ];
 
@@ -18,7 +17,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
       {/* Decorative Botanical Badge */}
       <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#F2F0EB] border border-[#E6E2DA] text-[#8C9A84] text-xs sm:text-sm font-semibold shadow-xs mb-6">
         <Sparkles className="w-4 h-4 text-[#C27B66] animate-spin" style={{ animationDuration: '12s' }} />
-        <span className="tracking-wide">VNR202 • Lịch Sử Đảng Cộng Sản Việt Nam (1939 - 1945)</span>
+        <span className="tracking-wide">VNR202 • Lịch Sử Đảng Cộng Sản Việt Nam</span>
       </div>
 
       {/* Main Playfair Display Serif Title */}
@@ -33,7 +32,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
       {/* Subtitle / Context description */}
       <p className="text-sm sm:text-base text-[#2D3A31]/80 max-w-2xl mb-8 leading-relaxed font-normal">
         Ngân hàng câu hỏi gồm <strong className="text-[#C27B66] font-semibold">{totalQuestions} câu hỏi</strong> đố chữ phong phú. 
-        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa lịch sử giai đoạn <strong>1939 – 1945 & Cách mạng Tháng Tám 1945</strong>!
+        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa lịch sử và đường lối cách mạng!
       </p>
 
       {/* QUESTION COUNT / MODE SELECTOR */}
@@ -45,7 +44,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
           </span>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {modeOptions.map((opt) => {
             const isSelected = selectedCount === opt.count;
             return (
