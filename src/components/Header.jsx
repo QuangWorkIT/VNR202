@@ -12,26 +12,26 @@ export default function Header({
   const progressPercent = Math.round(((currentQuestionIndex + 1) / totalQuestions) * 100);
 
   return (
-    <header className="sticky top-0 z-40 w-full bg-[#F9F8F4]/90 backdrop-blur-md border-b border-[#E6E2DA] px-4 py-3 sm:px-8">
+    <header className="sticky top-0 z-40 w-full bg-[#181418]/95 backdrop-blur-md border-b border-[#352930] px-4 py-3 sm:px-8">
       <div className="max-w-6xl mx-auto flex items-center justify-between gap-4">
         
         {/* Brand & Home Pill Button */}
         <div className="flex items-center gap-3">
           <button
             onClick={onGoHome}
-            className="flex items-center gap-2 bg-[#F2F0EB] hover:bg-[#E6E2DA] text-[#2D3A31] border border-[#E6E2DA] px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 hover:scale-105 active:scale-95 shadow-xs"
+            className="flex items-center gap-2 bg-[#251D23] hover:bg-[#32262E] text-[#FDFBF7] border border-[#42323B] px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-300 hover:scale-105 active:scale-95 shadow-sm cursor-pointer"
             title="Về trang chủ"
           >
-            <Home className="w-4 h-4 text-[#8C9A84]" />
+            <Home className="w-4 h-4 text-[#F59E0B]" />
             <span className="hidden sm:inline">Trang Chủ</span>
           </button>
 
           <div className="flex items-center gap-2.5">
-            <div className="w-8 h-8 rounded-full bg-[#2D3A31] flex items-center justify-center font-serif-title text-[#F9F8F4] text-base font-bold shadow-sm">
+            <div className="w-8 h-8 rounded-full bg-[#DC2626] flex items-center justify-center font-serif-title text-[#FDE68A] text-base font-bold shadow-md">
               M
             </div>
-            <span className="font-serif-title text-base sm:text-xl font-bold tracking-tight text-[#2D3A31]">
-              Đuổi Hình Bắt Chữ <span className="italic font-normal text-[#C27B66]">MLN131 - CNXHKH</span>
+            <span className="font-serif-title text-base sm:text-xl font-bold tracking-tight text-[#FDFBF7]">
+              Đuổi Hình Bắt Chữ <span className="italic font-normal text-[#EF4444]">MLN131 - CNXHKH</span>
             </span>
           </div>
         </div>
@@ -40,17 +40,17 @@ export default function Header({
         {currentQuestionIndex !== null && (
           <div className="flex items-center gap-3 sm:gap-4">
             {/* Score Pill */}
-            <div className="flex items-center gap-1.5 bg-[#F2F0EB] border border-[#E6E2DA] px-3.5 py-1.5 rounded-full shadow-xs">
-              <Trophy className="w-4 h-4 text-[#C27B66]" />
-              <span className="text-xs sm:text-sm font-bold text-[#2D3A31]">
-                {score} <span className="text-[#8C9A84] text-xs font-normal">điểm</span>
+            <div className="flex items-center gap-1.5 bg-[#251D23] border border-[#42323B] px-3.5 py-1.5 rounded-full shadow-sm">
+              <Trophy className="w-4 h-4 text-[#F59E0B]" />
+              <span className="text-xs sm:text-sm font-bold text-[#FDFBF7]">
+                {score} <span className="text-[#EF4444] text-xs font-normal">điểm</span>
               </span>
             </div>
 
             {/* Question Counter */}
-            <div className="hidden sm:flex items-center gap-2 bg-[#F2F0EB] border border-[#E6E2DA] px-3.5 py-1.5 rounded-full">
-              <BookOpen className="w-4 h-4 text-[#8C9A84]" />
-              <span className="text-xs font-semibold text-[#2D3A31]">
+            <div className="hidden sm:flex items-center gap-2 bg-[#251D23] border border-[#42323B] px-3.5 py-1.5 rounded-full">
+              <BookOpen className="w-4 h-4 text-[#F59E0B]" />
+              <span className="text-xs font-semibold text-[#FDFBF7]">
                 Câu {currentQuestionIndex + 1}/{totalQuestions}
               </span>
             </div>
@@ -58,20 +58,20 @@ export default function Header({
             {/* Sound Toggle */}
             <button
               onClick={onToggleSound}
-              className="p-2 rounded-full bg-[#F2F0EB] border border-[#E6E2DA] text-[#2D3A31] hover:bg-[#E6E2DA] transition-colors"
+              className="p-2 rounded-full bg-[#251D23] border border-[#42323B] text-[#FDFBF7] hover:bg-[#32262E] transition-colors cursor-pointer"
               title={soundEnabled ? 'Tắt âm thanh' : 'Bật âm thanh'}
             >
-              {soundEnabled ? <Volume2 className="w-4 h-4 text-[#8C9A84]" /> : <VolumeX className="w-4 h-4 text-[#A89F91]" />}
+              {soundEnabled ? <Volume2 className="w-4 h-4 text-[#F59E0B]" /> : <VolumeX className="w-4 h-4 text-[#7A6E69]" />}
             </button>
           </div>
         )}
       </div>
 
-      {/* Organic Progress Bar */}
+      {/* Progress Bar with Crimson to Gold Gradient */}
       {currentQuestionIndex !== null && (
-        <div className="w-full bg-[#E6E2DA] h-1.5 mt-2 rounded-full overflow-hidden">
+        <div className="w-full bg-[#2C2228] h-1.5 mt-2 rounded-full overflow-hidden">
           <div 
-            className="bg-gradient-to-r from-[#8C9A84] via-[#A3B19B] to-[#C27B66] h-full transition-all duration-500 rounded-full"
+            className="bg-gradient-to-r from-[#D97706] via-[#F59E0B] to-[#DC2626] h-full transition-all duration-500 rounded-full"
             style={{ width: `${progressPercent}%` }}
           />
         </div>

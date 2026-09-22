@@ -3,26 +3,30 @@
 
 :root {
   font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  color-scheme: light;
-  --bg-alabaster: #F9F8F4;
-  --fg-forest: #2D3A31;
-  --accent-sage: #8C9A84;
-  --bg-clay: #F2F0EB;
-  --border-stone: #E6E2DA;
-  --interactive-terracotta: #C27B66;
+  color-scheme: dark;
+  --bg-main: #121113;
+  --bg-card: #1B171B;
+  --bg-inner: #131013;
+  --fg-light: #FDFBF7;
+  --fg-muted: #A89F98;
+  --accent-crimson: #DC2626;
+  --accent-crimson-hover: #B91C1C;
+  --accent-gold: #F59E0B;
+  --accent-gold-dark: #D97706;
+  --border-subtle: #352930;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-alabaster);
-  color: var(--fg-forest);
+  background-color: #121113;
+  color: #FDFBF7;
   min-height: 100vh;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(140, 154, 132, 0.12) 0%, transparent 65%),
-    radial-gradient(circle at 100% 100%, rgba(194, 123, 102, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 0% 100%, rgba(220, 207, 194, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 50% 0%, rgba(220, 38, 38, 0.14) 0%, transparent 65%),
+    radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.10) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(185, 28, 28, 0.09) 0%, transparent 50%);
 }
 
 /* Typography Tokens */
@@ -44,7 +48,7 @@ body {
 
 .font-keyword-tile {
   font-family: 'Bungee', 'Playfair Display', 'Lexend', serif;
-  text-shadow: 0 2px 4px rgba(45, 58, 49, 0.15);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
 }
 
 /* Animations */
@@ -75,10 +79,10 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 4px 20px rgba(140, 154, 132, 0.25), 0 0 40px rgba(194, 123, 102, 0.1);
+    box-shadow: 0 4px 20px rgba(220, 38, 38, 0.35), 0 0 40px rgba(245, 158, 11, 0.2);
   }
   50% {
-    box-shadow: 0 6px 30px rgba(140, 154, 132, 0.4), 0 0 60px rgba(194, 123, 102, 0.2);
+    box-shadow: 0 6px 30px rgba(220, 38, 38, 0.55), 0 0 60px rgba(245, 158, 11, 0.35);
   }
 }
 
@@ -104,14 +108,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F2F0EB;
+  background: #1B171B;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C5BCB1;
+  background: #3D3038;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8C9A84;
+  background: #F59E0B;
 }
