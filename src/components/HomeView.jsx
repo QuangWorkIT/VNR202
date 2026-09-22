@@ -32,7 +32,7 @@ export default function HomeView({ onStartGame, totalQuestions }) {
       {/* Subtitle / Context description */}
       <p className="text-sm sm:text-base text-[#2D3A31]/80 max-w-2xl mb-8 leading-relaxed font-normal">
         Ngân hàng câu hỏi gồm <strong className="text-[#C27B66] font-semibold">{totalQuestions} câu hỏi</strong> đố chữ phong phú. 
-        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa lịch sử và đường lối cách mạng!
+        Dựa vào hình ảnh câu đố trực quan, suy luận các từ khóa!
       </p>
 
       {/* QUESTION COUNT / MODE SELECTOR */}
