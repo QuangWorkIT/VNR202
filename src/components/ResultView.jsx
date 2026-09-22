@@ -31,9 +31,9 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
   const scorePercentage = Math.round((score / totalQuestions) * 100);
 
   const getRank = () => {
-    if (scorePercentage === 100) return { title: 'XUẤT SẮC TUYỆT ĐỐI! 🏆', color: 'text-[#C27B66]', desc: 'Bạn là chuyên gia kiến thức lịch sử Cách mạng Tháng Tám!' };
-    if (scorePercentage >= 80) return { title: 'GIỎI XUẤT SẮC! 🌟', color: 'text-[#8C9A84]', desc: 'Nắm rất vững các mốc sự kiện quan trọng trong môn VNR202.' };
-    if (scorePercentage >= 50) return { title: 'KHÁ TỐT! 👍', color: 'text-[#2D3A31]', desc: 'Đã đoán đúng đa số từ khóa lịch sử quan trọng.' };
+    if (scorePercentage === 100) return { title: 'XUẤT SẮC TUYỆT ĐỐI! 🏆', color: 'text-[#C27B66]', desc: 'Bạn là chuyên gia kiến thức môn MLN131 - CNXHKH!' };
+    if (scorePercentage >= 80) return { title: 'GIỎI XUẤT SẮC! 🌟', color: 'text-[#8C9A84]', desc: 'Nắm rất vững các kiến thức trọng tâm trong môn MLN131 - CNXHKH.' };
+    if (scorePercentage >= 50) return { title: 'KHÁ TỐT! 👍', color: 'text-[#2D3A31]', desc: 'Đã đoán đúng đa số từ khóa quan trọng.' };
     return { title: 'CỐ GẮNG HƠN NHÉ! 💪', color: 'text-[#C27B66]', desc: 'Hãy xem lại bảng tổng hợp từ khóa bên dưới để ghi nhớ kiến thức!' };
   };
 
@@ -105,7 +105,7 @@ export default function ResultView({ score, totalQuestions, questions, onRestart
         <div className="flex items-center gap-3 mb-6 border-b border-[#E6E2DA] pb-4">
           <BookOpen className="w-6 h-6 text-[#8C9A84]" />
           <h3 className="font-serif-title font-bold text-[#2D3A31] text-lg sm:text-xl">
-            Bảng Tổng Hợp {questions.length} Từ Khóa Lịch Sử (VNR202)
+            Bảng Tổng Hợp {questions.length} Từ Khóa (MLN131 - CNXHKH)
           </h3>
         </div>
 
