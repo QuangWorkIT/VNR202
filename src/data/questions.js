@@ -1,284 +1,308 @@
 export const QUESTIONS = [
   {
     id: 1,
-    keyword: "CƠM ĂN ÁO MẶC",
-    normalizedAnswer: "COM AN AO MAC",
-    topic: "Mục tiêu cách mạng / Đời sống nhân dân",
-    wordStructure: ["CƠM", "ĂN", "ÁO", "MẶC"],
+    keyword: "DÂN GIÀU NƯỚC MẠNH",
+    normalizedAnswer: "DAN GIAU NUOC MANH",
+    topic: "Mục tiêu xây dựng đất nước thời kỳ đổi mới",
+    wordStructure: ["DÂN", "GIÀU", "NƯỚC", "MẠNH"],
     photos: [
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-MnP_kVNAfPiYIZCthIIlEPqKc4OWZYXRhj0nMlV0a7co4GxvbNU8Z6Q&s=10", 
-        alt: "Bát cơm ăn" 
+        url: "https://tuyenquang.dcs.vn/Image/Large/2023426141256_133298.jpg", 
+        alt: "Nhân dân" 
       },
       { 
-        url: "https://product.hstatic.net/1000357687/product/__en-basic-teeartboard-7_2a761a04b29a45d29f2270f5636c1d41_master.png", 
-        alt: "Chiếc áo mặc" 
+        url: "https://www.shutterstock.com/shutterstock/photos/692079565/display_1500/stock-vector-businessman-getting-a-lot-of-money-illustration-vector-cartoon-692079565.jpg", 
+        alt: "Doanh nhân giàu có" 
+      },
+      { 
+        url: "https://t4.ftcdn.net/jpg/02/60/12/53/360_F_260125376_MQqe2h3iHkdhp57cKLBbLzU6hpq59VoM.jpg", 
+        alt: "Ly nước" 
+      },
+      { 
+        url: "https://t3.ftcdn.net/jpg/02/04/47/48/360_F_204474861_w5jYU2si0bbFT6QlvTHjxfBrQQW4Mp38.jpg", 
+        alt: "Cơ bắp sức mạnh" 
       }
     ],
-    hint: "Cụm từ gồm 4 từ, chỉ nhu cầu thiết yếu cơ bản nhất của con người mà Chủ tịch Hồ Chí Minh luôn mong muốn mọi người dân Việt Nam đều được hưởng.",
-    explanation: "Chủ tịch Hồ Chí Minh từng khẳng định: 'Tôi chỉ có một sự ham muốn, ham muốn tột bậc, là làm sao cho nước ta được hoàn toàn độc lập, dân ta được hoàn toàn tự do, đồng bào ai cũng có cơm ăn áo mặc, ai cũng được học hành'."
+    hint: "Mục tiêu tổng quát hàng đầu trong đường lối phát triển đất nước của Đảng: '... nước mạnh, dân chủ, công bằng, văn minh'.",
+    explanation: "'Dân giàu, nước mạnh, dân chủ, công bằng, văn minh' là mục tiêu tổng quát của thời kỳ đổi mới và xây dựng chủ nghĩa xã hội ở Việt Nam."
   },
   {
     id: 2,
-    keyword: "ÁP BỨC BÓC LỘT",
-    normalizedAnswer: "AP BUC BOC LOT",
-    topic: "Bản chất của chủ nghĩa thực dân & phong kiến",
-    wordStructure: ["ÁP", "BỨC", "BÓC", "LỘT"],
+    keyword: "CÁCH MẠNG THÁNG TÁM",
+    normalizedAnswer: "CACH MANG THANG TAM",
+    topic: "Mốc son chói lọi lịch sử dân tộc (1945)",
+    wordStructure: ["CÁCH", "MẠNG", "THÁNG", "TÁM"],
     photos: [
       { 
-        url: "https://thumbs.dreamstime.com/b/d-person-under-foot-illustration-boss-s-stepping-employee-rendering-people-human-character-47070678.jpg", 
-        alt: "Áp bức" 
+        url: "https://png.pngtree.com/png-vector/20240316/ourlarge/pngtree-red-army-victory-celebration-vector-png-image_11962426.png", 
+        alt: "Cách mạng" 
       },
       { 
-        url: "https://icdn.dantri.com.vn/cvNlsQoYcVFxP1FHlpn/Image/2013/08/luongsep27-8-52d0d.jpg", 
-        alt: "Bóc lột" 
+        url: "https://static.vecteezy.com/system/resources/previews/040/973/696/non_2x/funny-purple-number-eight-8-cartoon-character-showing-hands-number-eight-hand-drawn-illustration-isolated-on-transparent-background-vector.jpg", 
+        alt: "Số 8 (Tháng 8)" 
       }
     ],
-    hint: "Cụm từ gồm 4 từ, chỉ sự thống trị, chèn ép dã man và tước đoạt thành quả lao động của giai cấp thống trị đối với quần chúng nhân dân lao động.",
-    explanation: "Dưới ách thống trị tàn bạo của thực dân và phong kiến tay sai, nhân dân ta phải chịu cảnh áp bức bóc lột nặng nề về mọi mặt, thổi bùng lên ngọn lửa đấu tranh cách mạng giải phóng dân tộc."
+    hint: "Cuộc tổng khởi nghĩa vĩ đại mùa thu năm 1945 đập tan ách thống trị của thực dân, phát xít và phong kiến, khai sinh ra nước Việt Nam Dân chủ Cộng hòa.",
+    explanation: "Cách mạng Tháng Tám năm 1945 là mốc son chói lọi trong lịch sử dân tộc, mở ra kỷ nguyên độc lập, tự do và nhân dân làm chủ đất nước."
   },
   {
     id: 3,
-    keyword: "THỜI KỲ QUÁ ĐỘ",
-    normalizedAnswer: "THOI KY QUA DO",
-    topic: "Xây dựng Chủ nghĩa Xã hội",
-    wordStructure: ["THỜI", "KỲ", "QUÁ", "ĐỘ"],
+    keyword: "LẤY DÂN LÀM GỐC",
+    normalizedAnswer: "LAY DAN LAM GOC",
+    topic: "Tư tưởng trọng dân của Đảng và Bác Hồ",
+    wordStructure: ["LẤY", "DÂN", "LÀM", "GỐC"],
     photos: [
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStpMHk461nuCRoDFvFqYB60R9WlsNVE5UaaY75Ykgrgqk3edkGsJWwtYwm&s=10", 
-        alt: "Thời kỳ / Đồng hồ lịch" 
+        url: "https://tuyenquang.dcs.vn/Image/Large/2023426141256_133298.jpg", 
+        alt: "Nhân dân" 
       },
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT77G_qNIt6saQeotPxH5OtjSOlH3fbmEcZT6xMchoK3krcGCvx8WLGpVrN&s=10", 
-        alt: "Quá độ / Nhiệt độ" 
+        url: "https://png.pngtree.com/png-clipart/20210224/ourmid/pngtree-banyan-tree-root-clip-art-png-image_2952724.jpg", 
+        alt: "Gốc cây đa" 
       }
     ],
-    hint: "Giai đoạn chuyển tiếp lịch sử lâu dài, phức tạp từ một xã hội cũ sang xã hội xã hội chủ nghĩa ở Việt Nam.",
-    explanation: "Thời kỳ quá độ lên chủ nghĩa xã hội ở Việt Nam là một quá trình cách mạng sâu sắc, toàn diện, bỏ qua chế độ tư bản chủ nghĩa, từng bước xây dựng cơ sở vật chất và văn hóa cho CNXH."
+    hint: "Bài học kinh nghiệm quý báu xuyên suốt lịch sử dựng nước và giữ nước: 'Dân là gốc của nước', 'Dễ trăm lần không dân cũng chịu, khó vạn lần dân liệu cũng xong'.",
+    explanation: "Quan điểm 'Lấy dân làm gốc' khẳng định nhân dân là chủ thể, là nguồn sức mạnh vô địch của cách mạng; mọi chủ trương, chính sách của Đảng đều vì lợi ích của nhân dân."
   },
   {
     id: 4,
-    keyword: "NÔNG NGHIỆP LẠC HẬU",
-    normalizedAnswer: "NONG NGHIEP LAC HAU",
-    topic: "Đặc điểm kinh tế Việt Nam trước Đổi mới",
-    wordStructure: ["NÔNG", "NGHIỆP", "LẠC", "HẬU"],
+    keyword: "DÂN CHỦ GIÁN TIẾP",
+    normalizedAnswer: "DAN CHU GIAN TIEP",
+    topic: "Hình thức thực hiện quyền lực nhân dân",
+    wordStructure: ["DÂN", "CHỦ", "GIÁN", "TIẾP"],
     photos: [
       { 
-        url: "https://upload.wikimedia.org/wikipedia/commons/4/4f/Agriculture_in_Vietnam_with_farmers.jpg?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=original", 
-        alt: "Nông nghiệp" 
+        url: "https://tuyenquang.dcs.vn/Image/Large/2023426141256_133298.jpg", 
+        alt: "Nhân dân" 
       },
       { 
-        url: "https://khoahockythuat.ninhbinh.gov.vn/public/userfiles/image/Nam_2023/Thang_72023/Loi_ich_cua_cu_Lac.jpg", 
-        alt: "Củ lạc" 
+        url: "https://img.magnific.com/vector-mien-phi/nhan-vat-ong-chu-tuc-gian_23-2147618182.jpg?semt=ais_hybrid&w=740&q=80", 
+        alt: "Ông chủ" 
       },
       { 
-        url: "https://thumbs.dreamstime.com/b/cat-box-learning-preposition-concept-animal-behind-isolated-vector-educational-illustration-cartoon-style-153271692.jpg", 
-        alt: "Phía sau (Hậu)" 
+        url: "https://i.pinimg.com/736x/c4/94/05/c4940581732589b92d9a276ed992e374.jpg", 
+        alt: "Con gián" 
+      },
+      { 
+        url: "https://img.pikbest.com/png-images/qianku/cartoon-hand-drawn-female-receptionist_2393034.png!w700wp", 
+        alt: "Tiếp tân" 
       }
     ],
-    hint: "Cụm từ gồm 4 từ, mô tả xuất phát điểm kinh tế chủ yếu của nước ta khi bước vào công cuộc xây dựng chủ nghĩa xã hội.",
-    explanation: "Đặc điểm xuất phát lớn nhất của nước ta khi bước vào thời kỳ quá độ là một nền kinh tế nông nghiệp lạc hậu, sản xuất nhỏ là chủ yếu, phải trải qua quá trình công nghiệp hóa, hiện đại hóa đất nước."
+    hint: "Hình thức dân chủ đại diện, trong đó nhân dân thực hiện quyền lực của mình thông qua Quốc hội và Hội đồng nhân dân các cấp.",
+    explanation: "Dân chủ gián tiếp (dân chủ đại diện) là hình thức nhân dân ủy quyền, bầu ra các cơ quan đại diện quyền lực nhà nước thay mặt mình quyết định các vấn đề quan trọng của đất nước và địa phương."
   },
   {
     id: 5,
-    keyword: "CÔNG NÔNG TRÍ THỨC",
-    normalizedAnswer: "CONG NONG TRI THUC",
-    topic: "Khối liên minh giai cấp nền tảng",
-    wordStructure: ["CÔNG", "NÔNG", "TRÍ", "THỨC"],
+    keyword: "CÔNG BẰNG VĂN MINH",
+    normalizedAnswer: "CONG BANG VAN MINH",
+    topic: "Giá trị cốt lõi của Chủ nghĩa Xã hội",
+    wordStructure: ["CÔNG", "BẰNG", "VĂN", "MINH"],
     photos: [
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh98dBTYWyZJjHO8cAbQmtDDNkomSIBosYJGZtrkFWXnwX2Ndy3QvM3B8&s=10", 
-        alt: "Công nông" 
+        url: "https://www.shutterstock.com/shutterstock/videos/3891904995/thumb/1.jpg?ip=x480", 
+        alt: "Cán cân công bằng" 
       },
       { 
-        url: "https://t3.ftcdn.net/jpg/15/17/56/30/360_F_1517563097_nLq5m7jENEl2skkIwsixrAXapKH2WZPt.jpg", 
-        alt: "Trí tuệ" 
+        url: "https://www.shutterstock.com/image-vector/literature-education-school-college-university-260nw-2580541593.jpg", 
+        alt: "Sách văn học (Văn)" 
       },
       { 
-        url: "https://img.freepik.com/vector-mien-phi/hinh-minh-hoa-phang-cho-ngay-hoi-tri-thuc_23-2150671897.jpg", 
-        alt: "Tri thức" 
+        url: "https://e.khoahoc.tv/photos/image/2017/07/08/binh-minh.jpg", 
+        alt: "Bình minh rực sáng" 
       }
     ],
-    hint: "Liên minh giữa ba lực lượng cơ bản tạo nên nền tảng vững chắc của khối đại đoàn kết toàn dân tộc và Nhà nước ta.",
-    explanation: "Khối liên minh Công nhân - Nông dân - Trí thức dưới sự lãnh đạo của Đảng là nền tảng chính trị - xã hội của khối đại đoàn kết toàn dân và là rường cột của Nhà nước xã hội chủ nghĩa Việt Nam."
+    hint: "Hai tiêu chí quan trọng trong mục tiêu xây dựng xã hội mới của Đảng: 'Dân giàu, nước mạnh, dân chủ, ...'.",
+    explanation: "Xây dựng một xã hội công bằng và văn minh là bản chất ưu việt của chủ nghĩa xã hội, đảm bảo mọi người dân đều có cơ hội phát triển toàn diện."
   },
   {
     id: 6,
-    keyword: "MÁC LÊNIN",
-    normalizedAnswer: "MAC LENIN",
-    topic: "Nền tảng tư tưởng của Đảng",
-    wordStructure: ["MÁC", "LÊNIN"],
+    keyword: "HỘI ĐỒNG NHÂN DÂN",
+    normalizedAnswer: "HOI DONG NHAN DAN",
+    topic: "Cơ quan quyền lực nhà nước ở địa phương",
+    wordStructure: ["HỘI", "ĐỒNG", "NHÂN", "DÂN"],
     photos: [
       { 
-        url: "https://thumbs.dreamstime.com/b/cartoon-style-red-price-tag-transparent-background-perfect-design-projects-yellow-fastener-394529370.jpg", 
-        alt: "Nhãn mác (Mác)" 
+        url: "https://png.pngtree.com/png-clipart/20230914/original/pngtree-board-meeting-clipart-people-meeting-in-a-business-meeting-cartoon-vector-png-image_11242380.png", 
+        alt: "Hội họp" 
       },
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjfaqmln_2PP3ml0mwnmOeJvrRbNjbjk3to9XwEe67zg&s=10", 
-        alt: "Bước lên (Lên-in)" 
+        url: "https://media-cdn-v2.laodong.vn/storage/newsportal/2023/12/9/1277724/Z4954735778386_1Cbdc.jpg", 
+        alt: "Cánh đồng lúa" 
+      },
+      { 
+        url: "https://tuyenquang.dcs.vn/Image/Large/2023426141256_133298.jpg", 
+        alt: "Nhân dân" 
       }
     ],
-    hint: "Học thuyết cách mạng và khoa học đóng vai trò nền tảng tư tưởng, kim chỉ nam cho mọi hành động của Đảng Cộng sản Việt Nam.",
-    explanation: "Đảng Cộng sản Việt Nam lấy chủ nghĩa Mác - Lênin và Tư tưởng Hồ Chí Minh làm nền tảng tư tưởng, kim chỉ nam cho mọi hành động cách mạng."
+    hint: "Cơ quan quyền lực nhà nước ở địa phương, đại diện cho ý chí, nguyện vọng và quyền làm chủ của nhân dân địa phương do cử tri bầu ra.",
+    explanation: "Hội đồng nhân dân là cơ quan đại biểu của nhân dân địa phương, quyết định các vấn đề quan trọng của địa phương và giám sát hoạt động của các cơ quan nhà nước tại địa phương."
   },
   {
     id: 7,
-    keyword: "KỶ NGUYÊN VƯƠN MÌNH",
-    normalizedAnswer: "KY NGUYEN VUON MINH",
-    topic: "Định hướng phát triển đất nước thời đại mới",
-    wordStructure: ["KỶ", "NGUYÊN", "VƯƠN", "MÌNH"],
+    keyword: "DIỄN BIẾN HÒA BÌNH",
+    normalizedAnswer: "DIEN BIEN HOA BINH",
+    topic: "Âm mưu chống phá của các thế lực thù địch",
+    wordStructure: ["DIỄN", "BIẾN", "HÒA", "BÌNH"],
     photos: [
       { 
-        url: "https://media.istockphoto.com/id/856229866/photo/hourglass-clock-on-sand-of-desert-background.jpg?s=612x612&w=0&k=20&c=0t0lV9mzcpSRKfojZKvW-3rVKcwmrvXg1UuVI3tiKUc=", 
-        alt: "Thời gian (Kỷ nguyên)" 
+        url: "https://media.istockphoto.com/id/1314813147/vi/vec-to/di%E1%BB%85n-vi%C3%AAn-trung-qu%E1%BB%91c-bi%E1%BB%83u-di%E1%BB%85n-k%E1%BB%8Bch-tr%C3%AAn-s%C3%A2n-kh%E1%BA%A5u.jpg?s=612x612&w=0&k=20&c=-KTvA9MKJb45x3mTJti2mgd5e7oqXAw-BEw73gJQfjE=", 
+        alt: "Diễn viên kịch (Diễn)" 
       },
       { 
-        url: "https://png.pngtree.com/png-vector/20240427/ourlarge/pngtree-a-cute-cartoon-boy-getting-up-or-waking-from-bed-png-image_12338739.png", 
-        alt: "Thức dậy vươn mình" 
+        url: "https://media.istockphoto.com/id/1327880126/vi/vec-to/poster-h%C3%B2a-b%C3%ACnh-th%E1%BA%BF-gi%E1%BB%9Bi.jpg?s=170667a&w=0&k=20&c=5JeLZv9MJoKrT_UuqCaF1it80alSpdl_7j75pGqih-8=", 
+        alt: "Hòa bình" 
       }
     ],
-    hint: "Thông điệp chiến lược quan trọng của Đảng chỉ ra thời kỳ phát triển bứt phá của dân tộc Việt Nam: 'Kỷ nguyên ... của dân tộc Việt Nam'.",
-    explanation: "Việt Nam bước vào 'Kỷ nguyên vươn mình của dân tộc', đẩy mạnh đổi mới toàn diện, chuyển đổi số, phát triển kinh tế tri thức và khẳng định vị thế quốc gia vững chắc trên trường quốc tế."
+    hint: "Chiến lược phi quân sự của các thế lực thù địch nhằm lật đổ chế độ chính trị - xã hội của các nước xã hội chủ nghĩa từ bên trong.",
+    explanation: "'Diễn biến hòa bình' là chiến lược nguy hiểm của chủ nghĩa đế quốc và các thế lực thù địch nhằm chống phá sự nghiệp cách mạng của Đảng và nhân dân ta bằng các biện pháp phi vũ trang kết hợp đe dọa vũ trang."
   },
   {
     id: 8,
-    keyword: "CẤM VẬN",
-    normalizedAnswer: "CAM VAN",
-    topic: "Bối cảnh khó khăn sau năm 1975",
-    wordStructure: ["CẤM", "VẬN"],
+    keyword: "TỰ DIỄN BIẾN",
+    normalizedAnswer: "TU DIEN BIEN",
+    topic: "Xây dựng, chỉnh đốn Đảng",
+    wordStructure: ["TỰ", "DIỄN", "BIẾN"],
     photos: [
       { 
-        url: "https://marketplace.canva.com/P8u90/MADmjCP8u90/2/tl/canva-MADmjCP8u90.png", 
-        alt: "Biển cấm" 
+        url: "https://kibath.vn/wp-content/uploads/2019/11/soi-guong-nhieu-co-sao-khong.jpg", 
+        alt: "Tự soi gương" 
       },
       { 
-        url: "https://i-law.vn/uploads/articles/68112/4411dich-vu-van-chuyen-hang-hoa-noi-thanh-ha-noi-va-hai-phong(1).jpg", 
-        alt: "Vận chuyển" 
+        url: "https://media.istockphoto.com/id/1314813147/vi/vec-to/di%E1%BB%85n-vi%C3%AAn-trung-qu%E1%BB%91c-bi%E1%BB%83u-di%E1%BB%85n-k%E1%BB%8Bch-tr%C3%AAn-s%C3%A2n-kh%E1%BA%A5u.jpg?s=612x612&w=0&k=20&c=-KTvA9MKJb45x3mTJti2mgd5e7oqXAw-BEw73gJQfjE=", 
+        alt: "Diễn viên kịch (Diễn)" 
       }
     ],
-    hint: "Biện pháp bao vây kinh tế và cô lập quan hệ quốc tế mà các thế lực bên ngoài áp đặt đối với Việt Nam trong nhiều năm sau ngày giải phóng.",
-    explanation: "Tình trạng bao vây cấm vận của Mỹ và các thế lực thù địch sau năm 1975 đã gây ra muôn vàn khó khăn, thử thách cho công cuộc tái thiết và phát triển kinh tế đất nước cho đến khi được gỡ bỏ hoàn toàn vào năm 1994."
+    hint: "Hiện tượng suy thoái, biến chất về tư tưởng chính trị, đạo đức, lối sống từ bên trong nội bộ cán bộ, đảng viên do thiếu tu dưỡng rèn luyện.",
+    explanation: "'Tự diễn biến' là quá trình biến đổi nội tâm theo hướng tiêu cực, làm lung lay niềm tin vào chủ nghĩa Mác - Lênin, Tư tưởng Hồ Chí Minh và sự lãnh đạo của Đảng."
   },
   {
     id: 9,
-    keyword: "THỔ ĐỊA CÁCH MẠNG",
-    normalizedAnswer: "THO DIA CACH MANG",
-    topic: "Cương lĩnh chính trị đầu tiên (1930)",
-    wordStructure: ["THỔ", "ĐỊA", "CÁCH", "MẠNG"],
+    keyword: "TỰ CHUYỂN HÓA",
+    normalizedAnswer: "TU CHUYEN HOA",
+    topic: "Phòng chống suy thoái trong Đảng",
+    wordStructure: ["TỰ", "CHUYỂN", "HÓA"],
     photos: [
       { 
-        url: "https://cdn.tgdd.vn/Files/2020/10/11/1297906/ong-dia-la-ai-cach-phan-biet-ong-dia-tho-cong-va-than-tai-202201201415427173.jpg", 
-        alt: "Tượng Thổ Địa" 
+        url: "https://kibath.vn/wp-content/uploads/2019/11/soi-guong-nhieu-co-sao-khong.jpg", 
+        alt: "Tự soi gương" 
       },
       { 
-        url: "https://png.pngtree.com/element_our/20190523/ourlarge/pngtree-hand-drawn-cartoon-revolutionary-character-png-element-image_1092387.jpg", 
-        alt: "Chiến sĩ cách mạng" 
+        url: "https://i-law.vn/uploads/articles/68112/4411dich-vu-van-chuyen-hang-hoa-noi-thanh-ha-noi-va-hai-phong(1).jpg", 
+        alt: "Xe tải vận chuyển" 
+      },
+      { 
+        url: "https://img.magnific.com/free-vector/science-scribbles_23-2147501583.jpg?semt=ais_hybrid&w=740&q=80", 
+        alt: "Dụng cụ hóa học (Hóa)" 
       }
     ],
-    hint: "Nhiệm vụ cách mạng ruộng đất được xác định trong Cương lĩnh chính trị đầu tiên của Đảng (2/1930) nhằm đánh đổ địa chủ phong kiến, đem lại ruộng đất cho dân cày.",
-    explanation: "Cương lĩnh chính trị đầu tiên của Đảng (2/1930) nêu rõ nhiệm vụ: 'Làm tư sản dân quyền cách mạng và thổ địa cách mạng để đi tới xã hội cộng sản', xác định cách mạng ruộng đất là nhiệm vụ chiến lược gắn liền với giải phóng dân tộc."
+    hint: "Giai đoạn biến đổi về chất từ suy thoái tư tưởng chính trị dẫn đến thay đổi hành động chống lại Đảng, chế độ và nhân dân.",
+    explanation: "'Tự chuyển hóa' là nấc thang nguy hiểm tiếp theo của 'tự diễn biến', khi cán bộ, đảng viên thay đổi quan điểm và hành động chống phá đường lối của Đảng và Nhà nước."
   },
   {
     id: 10,
-    keyword: "ẢNH HƯỞNG NÔ DỊCH",
-    normalizedAnswer: "ANH HUONG NO DICH",
-    topic: "Văn hóa - Giáo dục thời thuộc địa",
-    wordStructure: ["ẢNH", "HƯỞNG", "NÔ", "DỊCH"],
+    keyword: "LẠM QUYỀN",
+    normalizedAnswer: "LAM QUYEN",
+    topic: "Kiểm soát quyền lực nhà nước",
+    wordStructure: ["LẠM", "QUYỀN"],
     photos: [
       { 
-        url: "https://www.shutterstock.com/shutterstock/photos/150932603/display_1500/stock-vector-boy-and-girl-picture-in-wooden-frame-cartoon-vector-and-illustration-isolated-on-white-150932603.jpg", 
-        alt: "Bức ảnh" 
+        url: "https://media.dolenglish.vn/PUBLIC/MEDIA/90d01f32-2ea5-4132-83d0-752034649624.jpg", 
+        alt: "Ngập lụt tràn lan (Lạm)" 
       },
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqSNJ99lrQvLe9ceS037reLIzJ6j0fOmVfBVB7NsFtgsp7OnpfFBd8Ju0&s=10", 
-        alt: "Bát hương (Hưởng)" 
-      },
-      { 
-        url: "https://upload.wikimedia.org/wikipedia/en/3/3f/NobitaNobi.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original", 
-        alt: "Nobita (Nô)" 
-      },
-      { 
-        url: "https://static.vecteezy.com/system/resources/previews/007/258/712/non_2x/translator-or-translation-language-illustration-say-hello-in-different-countries-and-multilingual-international-communication-cartoon-design-vector.jpg", 
-        alt: "Phiên dịch (Dịch)" 
+        url: "/images/photos/royal_decree.jpg", 
+        alt: "Lệnh bài quyền lực" 
       }
     ],
-    hint: "Cụm từ 4 từ, chỉ sự tác động kìm hãm, làm tha hóa tư tưởng của chính sách văn hóa - giáo dục thực dân phong kiến đối với nhân dân ta.",
-    explanation: "Đề cương về văn hóa Việt Nam (1943) và đường lối văn hóa của Đảng chủ trương quét sạch mọi ảnh hưởng nô dịch, ngu dân của chủ nghĩa thực dân, xây dựng nền văn hóa mới Dân tộc - Khoa học - Đại chúng."
+    hint: "Hành vi vượt quá thẩm quyền, chức trách được giao của người có chức vụ để làm những việc trái quy định pháp luật.",
+    explanation: "Lạm quyền là một biểu hiện tiêu cực, vi phạm kỷ luật của Đảng và pháp luật của Nhà nước, gây tổn hại đến uy tín của cơ quan công quyền và quyền lợi của nhân dân."
   },
   {
     id: 11,
-    keyword: "KẾ THỪA TRUYỀN THỐNG",
-    normalizedAnswer: "KE THUA TRUYEN THONG",
-    topic: "Xây dựng nền văn hóa Việt Nam tiên tiến",
-    wordStructure: ["KẾ", "THỪA", "TRUYỀN", "THỐNG"],
+    keyword: "CẢI CÁCH HÀNH CHÍNH",
+    normalizedAnswer: "CAI CACH HANH CHINH",
+    topic: "Xây dựng nền hành chính công hiện đại",
+    wordStructure: ["CẢI", "CÁCH", "HÀNH", "CHÍNH"],
     photos: [
       { 
-        url: "https://t.pimg.jp/062/346/768/1/62346768.jpg", 
-        alt: "Kế thừa di sản" 
+        url: "https://png.pngtree.com/png-clipart/20190904/original/pngtree-cartoon-green-canola-illustration-png-image_4505438.jpg", 
+        alt: "Cây rau cải" 
       },
       { 
-        url: "https://media.istockphoto.com/id/504183268/vector/set-of-international-people-in-traditional-costumes-around-the-world.jpg?s=612x612&w=0&k=20&c=AtzUwBOC3B_rOnbLfPrq9bU0rYXnwvpQ1-bFJnzSVm8=", 
-        alt: "Trang phục truyền thống" 
+        url: "https://static.vecteezy.com/system/resources/thumbnails/016/102/830/small/onion-cartoon-icon-illustration-vector.jpg", 
+        alt: "Củ hành" 
+      },
+      { 
+        url: "https://static.vecteezy.com/system/resources/previews/011/287/733/non_2x/3d-red-number-9-png.png", 
+        alt: "Số 9 (Chín)" 
       }
     ],
-    hint: "Nguyên tắc cốt lõi trong xây dựng văn hóa: Tiếp thu và phát huy những giá trị đạo đức, lịch sử quý báu của dân tộc ta qua hàng ngàn năm dựng nước và giữ nước.",
-    explanation: "Đảng ta luôn khẳng định việc kế thừa và phát huy truyền thống yêu nước, đoàn kết, nhân văn của dân tộc, kết hợp hài hòa với tinh hoa văn hóa nhân loại để xây dựng nền văn hóa Việt Nam tiên tiến, đậm đà bản sắc dân tộc."
+    hint: "Chủ trương đổi mới tổ chức, hoạt động của bộ máy nhà nước nhằm xây dựng nền hành chính công trong sạch, tinh gọn, hiệu lực, hiệu quả phục vụ nhân dân.",
+    explanation: "Cải cách hành chính là trọng tâm trong xây dựng Nhà nước pháp quyền XHCN Việt Nam, đơn giản hóa thủ tục hành chính và nâng cao tinh thần phục vụ người dân, doanh nghiệp."
   },
   {
     id: 12,
-    keyword: "THOÁT NẠN BẦN CÙNG",
-    normalizedAnswer: "THOAT NAN BAN CUNG",
-    topic: "Mục tiêu nâng cao đời sống nhân dân",
-    wordStructure: ["THOÁT", "NẠN", "BẦN", "CÙNG"],
+    keyword: "SỞ HỮU TRÍ TUỆ",
+    normalizedAnswer: "SO HUU TRI TUE",
+    topic: "Phát triển kinh tế tri thức và đổi mới sáng tạo",
+    wordStructure: ["SỞ", "HỮU", "TRÍ", "TUỆ"],
     photos: [
       { 
-        url: "https://png.pngtree.com/png-clipart/20190617/original/pngtree-earthquake-run-away-earthquake-safety-knowledge-education-education-png-image_3851266.jpg", 
-        alt: "Thoát nạn" 
+        url: "/images/photos/house_keys.jpg", 
+        alt: "Chìa khóa quyền sở hữu" 
       },
       { 
-        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYbr1a4cUgxcXe8fWdA-p7v5sCk0o5pFxLVeAxzmxX-noUmB1BQXtMFpg&s=10", 
-        alt: "Bần cùng / Nghèo đói" 
+        url: "https://static.vecteezy.com/system/resources/previews/060/562/576/non_2x/happy-brain-cartoon-representing-learning-and-creativity-free-png.png", 
+        alt: "Bộ não trí tuệ" 
       }
     ],
-    hint: "Cụm từ 4 từ, chỉ quyết tâm và mục tiêu của Đảng trong việc giúp người dân vượt qua đói nghèo, vươn lên xây dựng cuộc sống no ấm và hạnh phúc.",
-    explanation: "Đảng và Bác Hồ luôn coi nhiệm vụ lãnh đạo nhân dân thoát nạn bần cùng, diệt giặc đói, giặc dốt là ưu tiên cấp bách hàng đầu nhằm không ngừng nâng cao đời sống vật chất và tinh thần cho toàn dân."
+    hint: "Quyền của tổ chức, cá nhân đối với tài sản trí tuệ bao gồm quyền tác giả, quyền sở hữu công nghiệp và quyền đối với giống cây trồng.",
+    explanation: "Bảo hộ quyền sở hữu trí tuệ là động lực thúc đẩy đổi mới sáng tạo, chuyển giao công nghệ và phát triển kinh tế tri thức trong thời kỳ hội nhập quốc tế."
   },
   {
     id: 13,
-    keyword: "NHÂN DÂN LAO ĐỘNG LÀM CHỦ",
-    normalizedAnswer: "NHAN DAN LAO DONG LAM CHU",
-    topic: "Bản chất của chế độ xã hội chủ nghĩa",
-    wordStructure: ["NHÂN", "DÂN", "LAO", "ĐỘNG", "LÀM", "CHỦ"],
+    keyword: "CÔNG KHAI MINH BẠCH",
+    normalizedAnswer: "CONG KHAI MINH BACH",
+    topic: "Phòng chống tham nhũng, lãng phí",
+    wordStructure: ["CÔNG", "KHAI", "MINH", "BẠCH"],
     photos: [
       { 
-        url: "https://png.pngtree.com/png-clipart/20210727/ourmid/pngtree-cartoon-workers-peasants-and-soldiers-celebrating-vietnam-national-day-png-image_3736634.jpg", 
-        alt: "Nhân dân lao động" 
+        url: "https://png.pngtree.com/png-clipart/20240115/original/pngtree-mobilize-loudspeakers-to-attract-attention-and-publicize-key-tips-png-image_14120559.png", 
+        alt: "Loa công khai" 
       },
       { 
-        url: "https://media.istockphoto.com/id/500542097/vi/vec-to/%C3%B4ng-ch%E1%BB%A7-big-bad.jpg?s=612x612&w=0&k=20&c=8PD8OBDY3DBBqkFALYOfM9ffztfp6n7yDW1uYWKTa1c=", 
-        alt: "Làm chủ" 
+        url: "https://e.khoahoc.tv/photos/image/2017/07/08/binh-minh.jpg", 
+        alt: "Bình minh rực sáng" 
+      },
+      { 
+        url: "https://thumbs.dreamstime.com/b/cartoon-white-color-paint-paint-bucket-painting-paint-grey-brown-brush-30519762.jpg", 
+        alt: "Thùng sơn trắng (Bạch)" 
       }
     ],
-    hint: "Bản chất cốt lõi của chế độ xã hội chủ nghĩa ở nước ta: Quyền lực nhà nước và xã hội thực sự thuộc về ai?",
-    explanation: "Bản chất của chế độ xã hội chủ nghĩa ở Việt Nam là bảo đảm quyền làm chủ thực sự của nhân dân lao động, xây dựng một xã hội 'dân giàu, nước mạnh, dân chủ, công bằng, văn minh'."
+    hint: "Nguyên tắc hoạt động cốt lõi của các cơ quan nhà nước, bảo đảm mọi thông tin cần thiết đều được thông báo rõ ràng cho nhân dân biết và giám sát.",
+    explanation: "Thực hiện công khai, minh bạch trong hoạt động của các cơ quan, tổ chức là giải pháp căn bản để phòng ngừa tham nhũng, lãng phí và củng cố niềm tin của nhân dân."
   },
   {
     id: 14,
-    keyword: "XU THẾ TẤT YẾU",
-    normalizedAnswer: "XU THE TAT YEU",
-    topic: "Quy luật vận động lịch sử của thời đại",
-    wordStructure: ["XU", "THẾ", "TẤT", "YẾU"],
+    keyword: "ĐẠO ĐỨC CÔNG VỤ",
+    normalizedAnswer: "DAO DUC CONG VU",
+    topic: "Xây dựng đội ngũ cán bộ, công chức",
+    wordStructure: ["ĐẠO", "ĐỨC", "CÔNG", "VỤ"],
     photos: [
       { 
-        url: "https://previews.123rf.com/images/sudowoodo/sudowoodo1804/sudowoodo180400008/98594568-cute-cartoon-robot-drawing-line-chart-stock-market-trading-or-business-analytics-presentation.jpg", 
-        alt: "Xu thế phát triển" 
+        url: "https://png.pngtree.com/png-vector/20201201/ourlarge/pngtree-cartoon-suit-angel-demon-moral-illustration-png-image_2484157.jpg", 
+        alt: "Đạo đức" 
       },
       { 
-        url: "https://static.vecteezy.com/system/resources/previews/068/20/776/non_2x/cartoon-drawing-of-a-blackboard-with-the-equation-e-mc-2-written-on-it-free-png.png", 
-        alt: "Quy luật tất yếu (E=mc2)" 
+        url: "https://i.pinimg.com/236x/d1/f9/7b/d1f97bfe15e479ea59aae5e96d6d1343.jpg", 
+        alt: "Quốc kỳ nước Đức" 
+      },
+      { 
+        url: "https://png.pngtree.com/png-vector/20250404/ourlarge/pngtree-cartoon-explosion-illustration-png-image_15939730.png", 
+        alt: "Vụ nổ (Vụ)" 
       }
     ],
-    hint: "Cụm từ 4 từ, chỉ quy luật phát triển khách quan không thể đảo ngược của lịch sử: Con đường độc lập dân tộc gắn liền với chủ nghĩa xã hội.",
-    explanation: "Độc lập dân tộc gắn liền với chủ nghĩa xã hội là con đường cách mạng đúng đắn, phản ánh xu thế tất yếu của thời đại và nguyện vọng thiết tha của nhân dân Việt Nam."
+    hint: "Hệ thống các chuẩn mực giá trị, quy tắc ứng xử của cán bộ, công chức khi thực thi nhiệm vụ được giao: Cần, kiệm, liêm, chính, chí công vô tư.",
+    explanation: "Đạo đức công vụ là nền tảng cốt lõi của người cán bộ, công chức, đảm bảo tinh thần tận tụy phục vụ Đảng, Nhà nước và nhân dân."
   }
 ];
