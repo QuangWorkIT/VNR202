@@ -102,7 +102,7 @@ export default function App() {
   const currentQuestion = activeQuestions[currentQuestionIndex] || activeQuestions[0];
 
   return (
-    <div className="min-h-screen bg-[#F9F8F4] text-[#2D3A31] font-sans-body selection:bg-[#8C9A84] selection:text-white flex flex-col justify-between relative">
+    <div className="min-h-screen bg-[#FDFBF7] text-[#2A1810] font-sans-body selection:bg-[#991B1B] selection:text-white flex flex-col justify-between relative">
       {/* MANDATORY PAPER GRAIN TEXTURE OVERLAY */}
       <div
         className="pointer-events-none fixed inset-0 z-50 opacity-[0.025]"

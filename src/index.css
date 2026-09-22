@@ -4,25 +4,26 @@
 :root {
   font-family: 'Source Sans 3', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   color-scheme: light;
-  --bg-alabaster: #F9F8F4;
-  --fg-forest: #2D3A31;
-  --accent-sage: #8C9A84;
-  --bg-clay: #F2F0EB;
-  --border-stone: #E6E2DA;
-  --interactive-terracotta: #C27B66;
+  --bg-cream: #FDFBF7;
+  --bg-card: #F5EFEB;
+  --fg-dark: #2A1810;
+  --accent-crimson: #991B1B;
+  --accent-gold: #D97706;
+  --accent-gold-light: #F59E0B;
+  --border-gold: #E7DEC8;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--bg-alabaster);
-  color: var(--fg-forest);
+  background-color: #FDFBF7;
+  color: #2A1810;
   min-height: 100vh;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(140, 154, 132, 0.12) 0%, transparent 65%),
-    radial-gradient(circle at 100% 100%, rgba(194, 123, 102, 0.08) 0%, transparent 50%),
-    radial-gradient(circle at 0% 100%, rgba(220, 207, 194, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 50% 0%, rgba(153, 27, 27, 0.08) 0%, transparent 65%),
+    radial-gradient(circle at 100% 100%, rgba(217, 119, 6, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 0% 100%, rgba(185, 28, 28, 0.06) 0%, transparent 50%);
 }
 
 /* Typography Tokens */
@@ -44,7 +45,7 @@ body {
 
 .font-keyword-tile {
   font-family: 'Bungee', 'Playfair Display', 'Lexend', serif;
-  text-shadow: 0 2px 4px rgba(45, 58, 49, 0.15);
+  text-shadow: 0 2px 4px rgba(42, 24, 16, 0.15);
 }
 
 /* Animations */
@@ -75,10 +76,10 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% {
-    box-shadow: 0 4px 20px rgba(140, 154, 132, 0.25), 0 0 40px rgba(194, 123, 102, 0.1);
+    box-shadow: 0 4px 20px rgba(153, 27, 27, 0.25), 0 0 40px rgba(217, 119, 6, 0.15);
   }
   50% {
-    box-shadow: 0 6px 30px rgba(140, 154, 132, 0.4), 0 0 60px rgba(194, 123, 102, 0.2);
+    box-shadow: 0 6px 30px rgba(153, 27, 27, 0.4), 0 0 60px rgba(217, 119, 6, 0.3);
   }
 }
 
@@ -104,14 +105,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F2F0EB;
+  background: #F5EFEB;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #C5BCB1;
+  background: #DFD4BE;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #8C9A84;
+  background: #D97706;
 }

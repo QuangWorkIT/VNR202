@@ -247,16 +247,16 @@ export default function QuestionView({
       {/* Top Question Header Info */}
       <div className="flex items-center justify-between w-full mb-4">
         <div className="flex items-center gap-2">
-          <span className="bg-[#2D3A31] text-[#F9F8F4] font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-xs">
+          <span className="bg-[#991B1B] text-[#FDFBF7] font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full shadow-xs">
             Câu hỏi {questionIndex + 1} / {totalQuestions}
           </span>
-          <span className="text-xs sm:text-sm text-[#2D3A31]/75 font-medium hidden sm:inline">
+          <span className="text-xs sm:text-sm text-[#2A1810]/75 font-medium hidden sm:inline">
             • {question.topic}
           </span>
         </div>
 
-        <div className="text-xs sm:text-sm text-[#8C9A84] font-semibold bg-[#F2F0EB] border border-[#E6E2DA] px-3.5 py-1.5 rounded-full">
-          Từ khóa: <strong className="text-[#2D3A31] font-bold">{question.wordStructure.length} từ</strong> ({totalLetters} chữ cái)
+        <div className="text-xs sm:text-sm text-[#7C6A59] font-semibold bg-[#F5EFEB] border border-[#E7DEC8] px-3.5 py-1.5 rounded-full">
+          Từ khóa: <strong className="text-[#991B1B] font-bold">{question.wordStructure.length} từ</strong> ({totalLetters} chữ cái)
         </div>
       </div>
 
@@ -267,23 +267,23 @@ export default function QuestionView({
 
       {/* WRONG ANSWER ALERT NOTIFICATION BANNER */}
       {showWrongAlert && !showAnswer && (
-        <div className="w-full mb-6 bg-[#FDF4F2] border-2 border-[#C27B66]/80 rounded-2xl p-4 sm:p-5 text-left shadow-sm flex items-start justify-between gap-3 animate-pop-in">
+        <div className="w-full mb-6 bg-[#FEF2F2] border-2 border-[#991B1B]/80 rounded-2xl p-4 sm:p-5 text-left shadow-sm flex items-start justify-between gap-3 animate-pop-in">
           <div className="flex items-start gap-3">
-            <div className="w-9 h-9 rounded-xl bg-[#C27B66]/20 border border-[#C27B66]/40 flex items-center justify-center shrink-0 mt-0.5">
-              <AlertCircle className="w-5 h-5 text-[#C27B66]" />
+            <div className="w-9 h-9 rounded-xl bg-[#991B1B]/15 border border-[#991B1B]/30 flex items-center justify-center shrink-0 mt-0.5">
+              <AlertCircle className="w-5 h-5 text-[#991B1B]" />
             </div>
             <div>
-              <h4 className="font-serif-title font-bold text-[#C27B66] text-sm sm:text-base tracking-wide uppercase">
+              <h4 className="font-serif-title font-bold text-[#991B1B] text-sm sm:text-base tracking-wide uppercase">
                 RẤT TIẾC! ĐÁP ÁN CHƯA CHÍNH XÁC ❌
               </h4>
-              <p className="text-[#2D3A31]/80 text-xs sm:text-sm mt-1 leading-relaxed">
+              <p className="text-[#2A1810]/80 text-xs sm:text-sm mt-1 leading-relaxed">
                 Từ khóa bạn vừa nhập chưa đúng. Hãy kiểm tra lại các chữ cái, bấm <strong>"Xóa Chữ"</strong> để gõ lại hoặc bấm <strong>"Gợi Ý"</strong> để xem manh mối!
               </p>
             </div>
           </div>
           <button
             onClick={() => setShowWrongAlert(false)}
-            className="text-[#C27B66] hover:text-[#2D3A31] p-1.5 rounded-lg hover:bg-[#C27B66]/10 transition-colors"
+            className="text-[#991B1B] hover:text-[#2A1810] p-1.5 rounded-lg hover:bg-[#991B1B]/10 transition-colors"
             title="Đóng thông báo"
           >
             <X className="w-4 h-4" />
@@ -293,14 +293,14 @@ export default function QuestionView({
 
       {/* Hint Section */}
       {showHint && (
-        <div className="w-full mb-6 bg-[#F2F0EB] border border-[#8C9A84]/40 rounded-2xl p-4 sm:p-5 text-left shadow-xs animate-pop-in">
+        <div className="w-full mb-6 bg-[#FFFBEB] border border-[#D97706]/40 rounded-2xl p-4 sm:p-5 text-left shadow-xs animate-pop-in">
           <div className="flex items-center gap-2.5 mb-2">
-            <div className="w-7 h-7 rounded-lg bg-[#8C9A84]/20 flex items-center justify-center">
-              <Lightbulb className="w-4 h-4 text-[#8C9A84]" />
+            <div className="w-7 h-7 rounded-lg bg-[#D97706]/20 flex items-center justify-center">
+              <Lightbulb className="w-4 h-4 text-[#D97706]" />
             </div>
-            <h4 className="font-serif-title font-bold text-[#2D3A31] text-sm sm:text-base">GỢI Ý CÂU HỎI:</h4>
+            <h4 className="font-serif-title font-bold text-[#92400E] text-sm sm:text-base">GỢI Ý CÂU HỎI:</h4>
           </div>
-          <p className="text-[#2D3A31]/85 text-sm sm:text-base leading-relaxed pl-9">
+          <p className="text-[#78350F] text-sm sm:text-base leading-relaxed pl-9">
             {question.hint}
           </p>
         </div>
@@ -310,39 +310,39 @@ export default function QuestionView({
       {showAnswer && (
         <div className={`w-full mb-6 border rounded-2xl p-5 text-left shadow-xs animate-pop-in ${
           isCorrect 
-            ? 'bg-[#F2F5F3] border-[#8C9A84]/60 text-[#2D3A31]' 
-            : 'bg-[#F2F0EB] border-[#C27B66]/40 text-[#2D3A31]'
+            ? 'bg-[#F0FDF4] border-[#16A34A]/50 text-[#14532D]' 
+            : 'bg-[#FEF2F2] border-[#991B1B]/40 text-[#2A1810]'
         }`}>
           <div className="flex items-center gap-2 mb-2">
             {isCorrect ? (
-              <CheckCircle className="w-6 h-6 text-[#8C9A84]" />
+              <CheckCircle className="w-6 h-6 text-[#16A34A]" />
             ) : (
-              <BookOpen className="w-6 h-6 text-[#C27B66]" />
+              <BookOpen className="w-6 h-6 text-[#991B1B]" />
             )}
             <h4 className="font-serif-title font-bold text-lg sm:text-xl tracking-wide uppercase">
-              Đáp Án: <span className="text-[#C27B66] font-keyword-tile">{question.keyword}</span>
+              Đáp Án: <span className="text-[#991B1B] font-keyword-tile">{question.keyword}</span>
             </h4>
           </div>
 
-          <p className="text-xs sm:text-sm text-[#2D3A31]/85 leading-relaxed border-t border-[#E6E2DA] pt-3 mt-2">
-            <strong className="text-[#8C9A84] font-bold">Ý nghĩa lịch sử:</strong> {question.explanation}
+          <p className="text-xs sm:text-sm text-[#2A1810]/85 leading-relaxed border-t border-[#E7DEC8] pt-3 mt-2">
+            <strong className="text-[#D97706] font-bold">Giải thích ý nghĩa:</strong> {question.explanation}
           </p>
         </div>
       )}
 
       {/* MAIN KEYWORD GRID WITH DIRECT TILE INPUTS */}
-      <div className={`w-full bg-[#F2F0EB] border border-[#E6E2DA] rounded-3xl p-5 sm:p-7 shadow-xs space-y-6 ${
-        errorShake ? 'animate-shake border-[#C27B66]' : ''
+      <div className={`w-full bg-[#F5EFEB] border border-[#E7DEC8] rounded-3xl p-5 sm:p-7 shadow-xs space-y-6 ${
+        errorShake ? 'animate-shake border-[#991B1B]' : ''
       }`}>
         
         <div className="text-center">
           {showAnswer || isAnswered ? (
-            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#8C9A84]/20 border border-[#8C9A84]/40 text-[#2D3A31] text-xs sm:text-sm font-semibold">
-              <Lock className="w-3.5 h-3.5 text-[#8C9A84]" />
+            <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-[#991B1B]/10 border border-[#991B1B]/25 text-[#991B1B] text-xs sm:text-sm font-semibold">
+              <Lock className="w-3.5 h-3.5 text-[#991B1B]" />
               Câu hỏi này đã hoàn thành (Không thể thay đổi đáp án nữa)
             </span>
           ) : (
-            <span className="text-xs sm:text-sm text-[#2D3A31]/75 font-medium">
+            <span className="text-xs sm:text-sm text-[#2A1810]/75 font-medium">
               👇 Gõ chữ (có dấu hoặc không dấu) trực tiếp vào ô bên dưới:
             </span>
           )}
@@ -353,7 +353,7 @@ export default function QuestionView({
           {question.wordStructure.map((word, wIdx) => (
             <div 
               key={wIdx} 
-              className="flex gap-1.5 sm:gap-2 bg-[#F9F8F4] p-2 sm:p-2.5 rounded-2xl border border-[#E6E2DA] shadow-xs"
+              className="flex gap-1.5 sm:gap-2 bg-[#FDFBF7] p-2 sm:p-2.5 rounded-2xl border border-[#E7DEC8] shadow-xs"
             >
               {word.split('').map((targetChar, cIdx) => {
                 const globalIdx = globalIndexTracker++;
@@ -383,10 +383,10 @@ export default function QuestionView({
                     onClick={() => inputRefs.current[globalIdx]?.select()}
                     className={`w-10 h-12 sm:w-14 sm:h-16 rounded-xl text-center font-keyword-tile text-xl sm:text-3xl font-black uppercase outline-none transition-all duration-200 transform ${
                       isRevealed
-                        ? 'bg-[#2D3A31] border-2 border-[#2D3A31] text-[#F9F8F4] shadow-sm scale-105'
+                        ? 'bg-[#991B1B] border-2 border-[#991B1B] text-[#F59E0B] shadow-sm scale-105'
                         : letterInputs[globalIdx]
-                        ? 'bg-[#F2F0EB] border-2 border-[#8C9A84] text-[#C27B66] shadow-xs scale-100'
-                        : 'bg-[#F9F8F4] border-2 border-[#E6E2DA] text-[#2D3A31] focus:border-[#8C9A84] focus:ring-4 focus:ring-[#8C9A84]/20 focus:scale-105'
+                        ? 'bg-[#F5EFEB] border-2 border-[#D97706] text-[#991B1B] shadow-xs scale-100'
+                        : 'bg-[#FDFBF7] border-2 border-[#E7DEC8] text-[#2A1810] focus:border-[#D97706] focus:ring-4 focus:ring-[#D97706]/20 focus:scale-105'
                     }`}
                   />
                 );
@@ -401,26 +401,26 @@ export default function QuestionView({
             <button
               type="button"
               onClick={handleCheckAnswer}
-              className="flex-1 flex items-center justify-center gap-2 bg-[#2D3A31] hover:bg-[#C27B66] text-[#F9F8F4] font-semibold px-6 py-3 rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all text-sm sm:text-base cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-[#991B1B] hover:bg-[#B91C1C] text-[#FDFBF7] font-semibold px-6 py-3 rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all text-sm sm:text-base cursor-pointer"
             >
-              <Check className="w-5 h-5 text-[#F9F8F4]" />
+              <Check className="w-5 h-5 text-[#F59E0B]" />
               <span>Kiểm Tra Đáp Án</span>
             </button>
 
             <button
               type="button"
               onClick={handleClearLetters}
-              className="flex items-center justify-center gap-1.5 bg-[#F9F8F4] hover:bg-[#E6E2DA] text-[#2D3A31] font-semibold px-4 py-3 rounded-full border border-[#E6E2DA] transition-all text-xs sm:text-sm cursor-pointer"
+              className="flex items-center justify-center gap-1.5 bg-[#FDFBF7] hover:bg-[#EBE3D3] text-[#2A1810] font-semibold px-4 py-3 rounded-full border border-[#E7DEC8] transition-all text-xs sm:text-sm cursor-pointer"
               title="Xóa tất cả chữ đã nhập"
             >
-              <RotateCcw className="w-4 h-4 text-[#8C9A84]" />
+              <RotateCcw className="w-4 h-4 text-[#D97706]" />
               <span className="hidden sm:inline">Xóa Chữ</span>
             </button>
           </div>
         )}
 
-        {/* REQUIRED ACTION BUTTONS GRID - Strict exact user labels */}
-        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-3 border-t border-[#E6E2DA]">
+        {/* REQUIRED ACTION BUTTONS GRID */}
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 pt-3 border-t border-[#E7DEC8]">
           
           {/* Quay Lại */}
           <button
@@ -429,11 +429,11 @@ export default function QuestionView({
             disabled={questionIndex === 0}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all border ${
               questionIndex === 0
-                ? 'bg-[#E6E2DA]/50 border-[#E6E2DA] text-[#A89F91] cursor-not-allowed opacity-60'
-                : 'bg-[#F9F8F4] border-[#E6E2DA] hover:border-[#8C9A84] text-[#2D3A31] hover:text-[#8C9A84] cursor-pointer hover:scale-105 active:scale-95'
+                ? 'bg-[#E7DEC8]/50 border-[#E7DEC8] text-[#A89F91] cursor-not-allowed opacity-60'
+                : 'bg-[#FDFBF7] border-[#E7DEC8] hover:border-[#D97706] text-[#2A1810] hover:text-[#D97706] cursor-pointer hover:scale-105 active:scale-95'
             }`}
           >
-            <ArrowLeft className="w-4 h-4 text-[#8C9A84]" />
+            <ArrowLeft className="w-4 h-4 text-[#D97706]" />
             <span>Quay Lại</span>
           </button>
 
@@ -443,11 +443,11 @@ export default function QuestionView({
             onClick={handleToggleHint}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all border ${
               showHint 
-                ? 'bg-[#8C9A84]/20 border-[#8C9A84] text-[#2D3A31]' 
-                : 'bg-[#F9F8F4] border-[#E6E2DA] hover:border-[#8C9A84] text-[#2D3A31] hover:text-[#8C9A84]'
+                ? 'bg-[#D97706]/15 border-[#D97706] text-[#92400E]' 
+                : 'bg-[#FDFBF7] border-[#E7DEC8] hover:border-[#D97706] text-[#2A1810] hover:text-[#D97706]'
             }`}
           >
-            <Lightbulb className="w-4 h-4 text-[#8C9A84]" />
+            <Lightbulb className="w-4 h-4 text-[#D97706]" />
             <span>{showHint ? 'Ẩn Gợi Ý' : 'Gợi Ý'}</span>
           </button>
 
@@ -458,11 +458,11 @@ export default function QuestionView({
             disabled={showAnswer || isAnswered}
             className={`flex items-center gap-2 px-5 py-2.5 rounded-full font-semibold text-sm transition-all border ${
               showAnswer || isAnswered
-                ? 'bg-[#E6E2DA]/60 border-[#E6E2DA] text-[#A89F91] cursor-default'
-                : 'bg-[#F9F8F4] border-[#E6E2DA] hover:border-[#C27B66] text-[#C27B66] hover:bg-[#F2F0EB]'
+                ? 'bg-[#E7DEC8]/60 border-[#E7DEC8] text-[#A89F91] cursor-default'
+                : 'bg-[#FDFBF7] border-[#E7DEC8] hover:border-[#991B1B] text-[#991B1B] hover:bg-[#FEF2F2]'
             }`}
           >
-            <Eye className="w-4 h-4 text-[#C27B66]" />
+            <Eye className="w-4 h-4 text-[#991B1B]" />
             <span>{showAnswer || isAnswered ? 'Đã Xem Đáp Án' : 'Đáp Án'}</span>
           </button>
 
@@ -470,10 +470,10 @@ export default function QuestionView({
           <button
             type="button"
             onClick={onNextQuestion}
-            className="flex items-center gap-2 bg-[#8C9A84] hover:bg-[#2D3A31] text-[#F9F8F4] font-semibold px-6 py-2.5 rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all text-sm cursor-pointer ml-auto sm:ml-0"
+            className="flex items-center gap-2 bg-[#D97706] hover:bg-[#B45309] text-[#FDFBF7] font-semibold px-6 py-2.5 rounded-full shadow-sm hover:scale-105 active:scale-95 transition-all text-sm cursor-pointer ml-auto sm:ml-0"
           >
             <span>{questionIndex < totalQuestions - 1 ? 'Tiếp Theo' : 'Xem Kết Quả'}</span>
-            <ArrowRight className="w-4 h-4 text-[#F9F8F4]" />
+            <ArrowRight className="w-4 h-4 text-[#FDFBF7]" />
           </button>
 
         </div>
